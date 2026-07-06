@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0d1a;
+  --foreground: #e0e0e0;
+  --card: #1a1a2e;
+  --card-foreground: #e0e0e0;
+  --popover: #1a1a2e;
+  --popover-foreground: #e0e0e0;
+  --primary: #00ff88;
+  --primary-foreground: #0d0d1a;
+  --secondary: #2a2a4a;
+  --secondary-foreground: #e0e0e0;
+  --muted: #1e1e3a;
+  --muted-foreground: #8888aa;
+  --accent: #ff00ff;
+  --accent-foreground: #e0e0e0;
+  --destructive: #ff4444;
+  --destructive-foreground: #e0e0e0;
+  --border: #333366;
+  --input: #333366;
+  --ring: #00ff88;
+  --radius: 0.5rem;
+  --neon-cyan: #00ffff;
+  --neon-yellow: #ffff00;
+  --neon-magenta: #ff00ff;
+  --neon-green: #00ff88;
+  --star-filled: #ffff00;
+  --star-empty: #333366;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-neon-yellow: var(--neon-yellow);
+  --color-neon-magenta: var(--neon-magenta);
+  --color-neon-green: var(--neon-green);
+  --color-star-filled: var(--star-filled);
+  --color-star-empty: var(--star-empty);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-pixel: 'Press Start 2P', cursive;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Retro scanline effect for headings */
+.arcade-heading {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+}
+
+/* Neon glow effect */
+.neon-glow {
+  box-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green), inset 0 0 5px rgba(0, 255, 136, 0.1);
+}
+
+/* Card hover effect */
+.arcade-card {
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.arcade-card:hover {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}

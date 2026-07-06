@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AppHost/AppHost.csproj" />
+    <Project Path="src/ServiceDefaults/ServiceDefaults.csproj" />
+    <Project Path="src/Web/Web.csproj" />
+  </Folder>
+  <Folder Name="/src/GameCatalog/">
+    <Project Path="src/GameCatalog/GameCatalog.Application/GameCatalog.Application.csproj" />
+    <Project Path="src/GameCatalog/GameCatalog.Domain/GameCatalog.Domain.csproj" />
+    <Project Path="src/GameCatalog/GameCatalog.Infrastructure.Sql/GameCatalog.Infrastructure.Sql.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Web.Tests/Web.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/GameCatalog/">
+    <Project Path="tests/GameCatalog/GameCatalog.Application.Tests/GameCatalog.Application.Tests.csproj" />
+    <Project Path="tests/GameCatalog/GameCatalog.Domain.Tests/GameCatalog.Domain.Tests.csproj" />
+    <Project Path="tests/GameCatalog/GameCatalog.Infrastructure.Sql.Tests/GameCatalog.Infrastructure.Sql.Tests.csproj" />
+  </Folder>
+</Solution>
